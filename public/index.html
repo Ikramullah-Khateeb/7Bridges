@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+        name="description"
+        content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -25,19 +25,60 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>7Bridges</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Add Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <style>
+        /* Social Icons Styles */
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            position: fixed;
+            bottom: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            z-index: 9999; /* Ensure icons appear above other content */
+        }
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .social-icons li a {
+            color: #fff; /* Icon color */
+            background-color: #333; /* Background color */
+            border-radius: 50%; /* Make the icons circular */
+            padding: 10px; /* Adjust as needed */
+            transition: background-color 0.3s ease;
+        }
+        .social-icons li a:hover {
+            background-color: #666; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+
+<!-- Social Media Icons -->
+<ul class="social-icons">
+    <li><a href="https://www.facebook.com/7bridges.fb" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://www.instagram.com/7bridgez?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.linkedin.com/company/7bridges" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="mailto:ask7bridges@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li> <!-- Add the email icon with mailto link -->
+    <!-- Add more social media icons as needed -->
+</ul>
+
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+
+<!-- Add your custom scripts here if needed -->
+</body>
 </html>
